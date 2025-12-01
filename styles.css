@@ -40,6 +40,42 @@ ul{
 
 }
 
+.icon{
+    height:25px;
+}
+
+.profile-pic{
+    height:20px;
+}
+
+.greeting-row{
+    background-color:aqua;
+    grid-column:1/2;
+    grid-row:2/3;
+
+}
+
+.greeting-row .profile-pic{
+    height:100px;
+}
+
+.search-bar{
+    grid-column:1/2;
+    grid-row:1/2;
+    background-color:white;
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.search{
+    background-color: #E2E8F0; 
+    border-radius:24px;
+    height:30px;
+    width:80%;
+
+}
+
 .dash-container{
     background-color: red;
     display:grid;
@@ -74,8 +110,10 @@ ul{
 }
 
 .project-box{
-    height:200px;
-    width:300px;
+    max-height:300px;
+    min-height:200px;
     background-color:white;
+    border-radius: 10px;
+    border-left:16px #D319A5 solid;
 }
 
