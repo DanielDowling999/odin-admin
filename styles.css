@@ -77,6 +77,40 @@ ul{
   border-radius: 15px;
 }
 
+.pic-wrapper{
+    width:75px;
+    height:75px;
+    border-radius:100%;
+    overflow: hidden;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-pic{
+    width:100px;
+    height:100px;
+}
+
+.pic{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.alerts-bar{
+    display:flex;
+    align-items:center;
+    justify-content: flex-end;
+    gap:40px;
+    padding-right:100px;
+
+}
+
+.alerts-bar p{
+    font-size:1.5rem;
+}
+
 
 /*Sidebar Section*/
 
@@ -111,6 +145,9 @@ ul{
 
 .icon{
     height:40px;
+}
+
+.icon-white{
     filter:invert(1);
 }
 
@@ -126,6 +163,9 @@ a{
 a:active{
     filter:invert(1);
     
+}
+a:active .dash-icon{
+    filter: contrast(0%);
 }
 
 .nav-section a{
