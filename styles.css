@@ -16,40 +16,52 @@ ul{
     list-style-type: none;
 }
 
+/*
 .main-container{
-    background-color: blue;
     display:grid;
     height:100vh;
     grid-template-columns:1fr 6fr;
     grid-template-rows: 1fr 5fr;
     gap:40px;
 
+}*/
+
+.main-container{
+    display:grid;
+    height:100vh;
+    grid-template-columns:1fr 6fr;
+    grid-template-rows: 1fr 5fr;
+    background-color: #e1e1e1;
 }
 
 /*Header Section*/
-
+/*
 .header-bar{
-    background-color: violet;
     grid-column:2/3;
     display:grid;
     grid-template-rows:1fr 1fr;
     grid-template-columns: 3fr 2fr;
     grid-auto-flow:column;
-}
-.profile-pic{
-    height:20px;
-}
+    background-color:white;
+}*/
 
+.header-bar{
+    grid-column:2/3;
+    display:grid;
+    grid-template-rows:1fr 1fr;
+    grid-template-columns: 3fr 2fr;
+    grid-auto-flow:column;
+    background-color:white;
+    padding-left: 40px;
+    padding-bottom:20px;
+    margin-bottom: 40px;
+}
 
 .greeting-row{
-    background-color:aqua;
     grid-column:1/2;
     grid-row:2/3;
-
-}
-
-.greeting-row .profile-pic{
-    height:100px;
+    display:flex;
+    flex-direction:row;
 }
 
 .search-bar{
@@ -111,6 +123,41 @@ ul{
     font-size:1.5rem;
 }
 
+.greeting{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.greeting-text{
+    padding-left:20px;
+}
+
+.dash-buttons{
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap:40px;
+    margin-right:100px;
+}
+
+.dash-buttons button{
+    height:50px;
+    width:150px;
+    background-color: #1992d4;
+    color:white;
+    border:none;
+    border-radius:40px;
+    font-size:1.4rem;
+    cursor:pointer;
+}
+.dash-buttons button:active{
+  -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+     -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+          box-shadow: inset 0px 0px 5px #c1c1c1;
+    background-color: #167fb7;
+
+}
 
 /*Sidebar Section*/
 
@@ -118,6 +165,7 @@ ul{
     height:60px;
     filter:invert(1);
 }
+
 
 .side-bar{
     background-color:#1992d4;
@@ -181,12 +229,15 @@ a:active .dash-icon{
 
 /*Dashboard Section*/
 .dash-container{
-    background-color: red;
+    background-color: #e1e1e1;
     display:grid;
     gap:40px;
     grid-auto-flow: column;
     grid-template-columns:3fr 1fr;
     grid-template-rows:1fr 1fr;
+    margin-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
 
 }
 
